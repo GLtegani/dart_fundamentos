@@ -1,12 +1,12 @@
 void main() {
   // Coisas básicas de código
-  var nome = 'Gabriel Tegani';
+  String nome = 'Gabriel Tegani';
   var subStringNome = nome.substring(7);
   print(subStringNome);
   var subString2 = nome.substring(0, 7);
   print(subString2);
 
-  var sexo = 'Feminino';
+  String sexo = 'Feminino';
 
   if (sexo.startsWith('F')) {
     print('Seu sexo é feminino');
@@ -17,21 +17,21 @@ void main() {
   }
 
   // Interpolação
-  var fNome = 'Gabriel';
-  var lNome = 'Tegani';
-  var saudacao = 'Olá $fNome $lNome, seja muito bem vindo';
+  String fNome = 'Gabriel';
+  String lNome = 'Tegani';
+  String saudacao = 'Olá $fNome $lNome, seja muito bem vindo';
 
   print(saudacao);
 
   // Caso eu queira usar algum "método" em alguma frase, colocar entre chaves
 
-  var saudacao2 =
+  String saudacao2 =
       'Testando aqui ${fNome.toUpperCase()}, e ${lNome.toLowerCase()}';
   print(saudacao2);
 
   print('A soma de 49 + 49 é ${49 + 49}');
 
-  var curriculo = 'Gabriel Tegani|16|Estudante de Dart e Flutter|SP';
+  String curriculo = 'Gabriel Tegani|16|Estudante de Dart e Flutter|SP';
   var infoCurriculo = curriculo.split('|');
   print(infoCurriculo);
 
